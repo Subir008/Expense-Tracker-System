@@ -13,11 +13,6 @@
 
 <link href="assets/css/style.css" rel="stylesheet">
 
-<style type="text/css">
-body {
-	padding-bottom: 20px;
-}
-
 </style>
 </head>
 <body>
@@ -41,7 +36,7 @@ body {
 
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active "
-						aria-current="page" href="#">Register</a></li>
+						aria-current="page" href="register.jsp">Register</a></li>
 					<li class="nav-item"><a class="nav-link active" href="#">Login</a>
 					</li>
 				</ul>
