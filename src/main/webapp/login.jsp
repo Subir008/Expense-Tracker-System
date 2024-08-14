@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register</title>
+<title>Login</title>
 
 <%@include file="assets/css/css.jsp"%>
 
@@ -67,25 +67,19 @@
 										
 										<form method="post" action="doctor-login">
 											<div class="form-group">
-												<label>Contact Number</label> <input type="tel"
+												<label>Contact Number</label> <input type="email"
 													name="doctor_email" value=""
 													placeholder="Enter Contact Number" required>
 											</div>
-											
 											<br>
 
 											<div class="form-group">
-												<label>New Password</label> <input type="password"
+												<label>Enter Password</label> <input type="password"
 													name="doctor_password" value=""
-													placeholder="Create password" required>
+													placeholder="Enter password" required>
 											</div>
 											<br>
-											<div class="form-group">
-												<label>Confirm Password</label> <input type="password"
-													name="doctor_password" value=""
-													placeholder="Create password" required>
-											</div>
-											<br>
+									
 											<br>
 											<div class="form-group ">
 												<button
