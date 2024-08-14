@@ -5,15 +5,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
 
+<%@include file="assets/css/css.jsp" %>
 <link href="assets/css/style.css" rel="stylesheet">
 
-</style>
 </head>
 <body>
 
@@ -37,7 +32,7 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active "
 						aria-current="page" href="register.jsp">Register</a></li>
-					<li class="nav-item"><a class="nav-link active" href="#">Login</a>
+					<li class="nav-item"><a class="nav-link active" href="login.jsp">Login</a>
 					</li>
 				</ul>
 
