@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="a" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page isELIgnored="false"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +55,27 @@
     </g>
   </svg> 
 
-	<!-- Register Section -->
+
+	<!-- Modal of login Failure -->
+	<a:if test="${not empty Failed }">
+		<div class="modal fade" id="myModal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+						<br>
+						<h3 class="text-danger">${Failed}</h3>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<a:remove var="Failed" />
+	</a:if>
+
+	<!-- Login Section -->
 	<div class="register-section  ml-2 mr-2">
 		<div class="container">
 			 <div class="inner-container">
@@ -65,17 +88,17 @@
 									<!-- Login Form -->
 									<div class="styled-form mt-5">
 										
-										<form method="post" action="doctor-login">
+										<form method="post" action="login">
 											<div class="form-group">
-												<label>Contact Number</label> <input type="email"
-													name="doctor_email" value=""
+												<label>Contact Number</label> <input type="tel"
+													name="contact" value=""
 													placeholder="Enter Contact Number" required>
 											</div>
 											<br>
 
 											<div class="form-group">
 												<label>Enter Password</label> <input type="password"
-													name="doctor_password" value=""
+													name="password" value=""
 													placeholder="Enter password" required>
 											</div>
 											<br>
@@ -100,9 +123,19 @@
 			</div>
 	 	</div> 
 	</div>
-	<!-- End Register Section -->
+	<!-- End Login Section -->
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"></script>
+	<%@include file="assets/js/js-file.jsp"%>
+	<script type="text/javascript">
+		var myModal = document.getElementById('myModal')
 
+		$(document).ready(function() {
+			$(myModal).modal('show');
+		});
+	</script>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+<%@page import="org.hibernate.SessionFactory"%>
+<%@page import="com.db.HibernateUtil"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -12,6 +14,11 @@
 </head>
 <body>
 
+	<% 
+	/* SessionFactory sessionFactory = HibernateUtil.getSessionFactory(); 
+	out.println(sessionFactory); */
+	%>
+	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"
 		aria-label="Fifth navbar example">
 		<div class="container-fluid">
@@ -32,7 +39,9 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active "
 						aria-current="page" href="register.jsp">Register</a></li>
-					<li class="nav-item"><a class="nav-link active" href="login.jsp">Login</a>
+					<li class="nav-item">
+					
+					<a class="nav-link active" href="login.jsp">Login</a>
 					</li>
 				</ul>
 
@@ -68,9 +77,7 @@
 		</div>
 	</section>
 
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+	<%@include file="assets/js/js-file.jsp" %>
+	
 </body>
 </html>
