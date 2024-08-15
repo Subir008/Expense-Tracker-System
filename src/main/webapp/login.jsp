@@ -53,7 +53,7 @@
   </svg> 
 
 	<!-- Register Section -->
-	<div class="register-section mb-5 ml-2 mr-2">
+	<div class="register-section  ml-2 mr-2">
 		<div class="container">
 			 <div class="inner-container">
 				<div class="row  paint-card">
@@ -63,7 +63,7 @@
 					<div class="col-lg-6 col-sm-12  p-5">
 						
 									<!-- Login Form -->
-									<div class="styled-form">
+									<div class="styled-form mt-5">
 										
 										<form method="post" action="doctor-login">
 											<div class="form-group">
