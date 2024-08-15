@@ -53,7 +53,7 @@
   </svg> 
 
 	<!-- Register Section -->
-	<div class="register-section mb-5 ml-2 mr-2">
+	<div class="register-section  ml-2 mr-2">
 		<div class="container">
 			 <div class="inner-container">
 				<div class="row  paint-card">
@@ -65,10 +65,16 @@
 									<!-- Login Form -->
 									<div class="styled-form">
 										
-										<form method="post" action="doctor-login">
+										<form method="post" action="userRegister">
+											<div class="form-group">
+												<label>Full Name</label> <input type="text"
+													name="fullname" value=""
+													placeholder="Enter Your Name" required>
+											</div>
+											<br>
 											<div class="form-group">
 												<label>Contact Number</label> <input type="tel"
-													name="doctor_email" value=""
+													name="contact" value=""
 													placeholder="Enter Contact Number" required>
 											</div>
 											
@@ -76,13 +82,13 @@
 
 											<div class="form-group">
 												<label>New Password</label> <input type="password"
-													name="doctor_password" value=""
+													name="new_password" value=""
 													placeholder="Create password" required>
 											</div>
 											<br>
 											<div class="form-group">
 												<label>Confirm Password</label> <input type="password"
-													name="doctor_password" value=""
+													name="confirm_password" value=""
 													placeholder="Create password" required>
 											</div>
 											<br>
